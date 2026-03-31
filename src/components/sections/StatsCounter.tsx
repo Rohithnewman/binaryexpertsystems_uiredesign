@@ -24,7 +24,7 @@ export const StatsCounter = () => {
       counters,
       { textContent: "0" },
       {
-        textContent: (i) => stats[i].value,
+        textContent: (i: number) => stats[i].value,
         duration: 2,
         ease: "power2.out",
         snap: { textContent: 1 },
